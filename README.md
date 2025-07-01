@@ -88,8 +88,7 @@ Linking the two tables together.  This is to ensure alignment and to making the 
 
 ## ANALYSIS
 
-### [Dashboard Preview - Gender Distribution]
-![Palmoria-HR-Dashboard_Gender_Distribution](https://github.com/user-attachments/assets/3373f470-5afd-460e-b896-03f571c81789)
+### [Dashboard Preview - Gender Distribution](Palmoria-HR-Dashboard_Gender_Distribution.png)
 
 ### [Dashboard Preview - Rating]
 ![Palmoria-HR-Dashboard_Rating](https://github.com/user-attachments/assets/58947caf-f76f-47c4-a919-80cbff4d7ebc)
