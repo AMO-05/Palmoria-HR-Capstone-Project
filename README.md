@@ -13,8 +13,6 @@ By analysing the various parameters in the data received, we seek to identify ke
 
 This will enable the management team to making spontaneous decisions that would bring about gender equality across its region and beyond for future expansion.
 
-### [Dashboard Preview](Dashboard_Screenshot.png)
-
 ## DATA SOURCES
 Primary source of data used here is 'Palmoria Group emp_data.csv' and 'Palmoria Group Bonus Rules.xls'
 [Download Here] ()
@@ -88,3 +86,19 @@ Linking the two tables together.  This is to ensure alignment and to making the 
 - 654 employees below salary regulation ($90K)
 - Bonus pay distribution is nearly equal (50.95% male / 49.05% female)
 
+## ANALYSIS
+
+### [Dashboard Preview - Gender Distribution]
+![Palmoria-HR-Dashboard_Gender_Distribution](https://github.com/user-attachments/assets/3373f470-5afd-460e-b896-03f571c81789)
+
+### [Dashboard Preview - Rating]
+![Palmoria-HR-Dashboard_Rating](https://github.com/user-attachments/assets/58947caf-f76f-47c4-a919-80cbff4d7ebc)
+
+### [Dashboard Preview - Salary Structure]
+![Palmoria-HR-Dashboard_Salary_Structure](https://github.com/user-attachments/assets/da8710aa-7f36-4058-8165-12939d612c9c)
+
+### [Dashboard Preview - Salary Compliance]
+![Palmoria-HR-Dashboard_Salary_compliance](https://github.com/user-attachments/assets/f049247f-600f-4805-83f9-308bf94ddfc3)
+
+### [Dashboard Preview - Bonus Distribution]
+![Palmoria-HR-Dashboard_Bonus_Distribution](https://github.com/user-attachments/assets/65e626e3-4274-4c64-aa7d-b87f801499c8)
