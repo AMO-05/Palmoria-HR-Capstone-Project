@@ -18,7 +18,7 @@ Primary source of data used here is 'Palmoria Group emp_data.csv' and 'Palmoria 
 [Download Here] ()
 
 ## TOOLS USAGE
-- Power BI Desktop
+- Power BI Desktop [Download Here](https://apps.microsoft.com/detail/9ntxr16hnw1t?launch=true&mode=full&hl=en-us&gl=ng&ocid=bingwebsearch)
    - Data Cleaning and Preparation
     In the initial phase of the cleaning and prepations, we perform the following actions:
            1. Data loading and inspection
@@ -46,11 +46,36 @@ EDA involved the exploring of the data to answer some questions about the data s
 
 This is where I include some basic lines of codes and even some of the DAX expression used during the analysis.
 
+... Measure to count the numbers of employee below minimum pay
+Employee Below Minimum Pay Count = 
+CALCULATE(COUNTROWS('Cleaned Palmoria Group emp-data'), 'Cleaned Palmoria Group emp-data'[Below Minimum]= "Below")
+
+... Measure to get below Minimum pay percentage
+Below Minimum Pay % = ABS([Male Minimum Pay %] - [Female Minimum Pay %])
+
+... Measure to create 
+Employee Meets/Exceeds Minimum Pay Count = 
+CALCULATE(COUNTROWS('Cleaned Palmoria Group emp-data'), 'Cleaned Palmoria Group emp-data'[Below Minimum]= "Meets/Exceeds")
+
+... Measure to get the Gender count gap percentage
+Gender Count Gap % = 
+ABS([Male Percentage] - [Female Percentage])
+
+...Measure to get the Gender pay gap percentage
+Gender Pay Gap % = 
+DIVIDE([Average Male Salary] - [Average Female Salary],[Average Male Salary],0)
+
+... Measure to get the Bonus Amount
+Bonus Amount = 'Cleaned Palmoria Group emp-data'[ Salary ] * 'Cleaned Palmoria Group emp-data'[Bonus Percent]
+
+... Add Column
+Conditional columns were created for Salary Band, Salary Sort, 
+
 ### DATA MODELING
 Linking the two tables together.  This is to ensure alignment and to making the two tables see each other to enable data-column relationship.
 
 ## 🧠 Business Insights
-- Gender Count gap of 18
+- Gender Count gap of 18 (1.90%)
    - Kaduna shows the highest gender gap of 17 amongst the regions
 - Gender pay gap of $2.2K (2.94%)
 - 654 employees below salary regulation ($90K)
