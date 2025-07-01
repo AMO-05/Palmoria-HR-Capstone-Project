@@ -48,3 +48,11 @@ This is where I include some basic lines of codes and even some of the DAX expre
 
 ### DATA MODELING
 Linking the two tables together.  This is to ensure alignment and to making the two tables see each other to enable data-column relationship.
+
+## 🧠 Business Insights
+- Gender Count gap of 18
+   - Kaduna shows the highest gender gap of 17 amongst the regions
+- Gender pay gap of $2.2K (2.94%)
+- 654 employees below salary regulation ($90K)
+- Bonus pay distribution is nearly equal (50.95% male / 49.05% female)
+
