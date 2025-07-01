@@ -1,7 +1,7 @@
 # PALMORIA HR DOCUMENTATION
 This is one of my Data Analysis Capstone project in fulfilment of Digital Skillup Africa- DSA INCUBATOR HUB for the final certification.  
 
-It is to demonstrate my technical indepth in using POWERBI to analyse real situation and give explicit insights that would enhance decision making.
+It is to demonstrate my technical indepth in using POWERBI to analyse real world situation and give explicit insights that would enhance decision making.
 
 ## PROJECT TOPIC: PALMORIA GROUP HR ANALYSIS
 
@@ -13,11 +13,13 @@ By analysing the various parameters in the data received, we seek to identify ke
 
 This will enable the management team to making spontaneous decisions that would bring about gender equality across its region and beyond for future expansion.
 
+### [Dashboard Preview](Dashboard_Screenshot.png)
+
 ## DATA SOURCES
 Primary source of data used here is 'Palmoria Group emp_data.csv' and 'Palmoria Group Bonus Rules.xls'
 [Download Here] ()
 
-## TOOLS USAGE
+## ⚙️ TOOLS USAGE
 - Power BI Desktop [Download Here](https://apps.microsoft.com/detail/9ntxr16hnw1t?launch=true&mode=full&hl=en-us&gl=ng&ocid=bingwebsearch)
    - Data Cleaning and Preparation
     In the initial phase of the cleaning and prepations, we perform the following actions:
@@ -47,32 +49,37 @@ EDA involved the exploring of the data to answer some questions about the data s
 This is where I include some basic lines of codes and even some of the DAX expression used during the analysis.
 
 ... Measure to count the numbers of employee below minimum pay
-Employee Below Minimum Pay Count = 
+- Employee Below Minimum Pay Count = 
 CALCULATE(COUNTROWS('Cleaned Palmoria Group emp-data'), 'Cleaned Palmoria Group emp-data'[Below Minimum]= "Below")
 
 ... Measure to get below Minimum pay percentage
-Below Minimum Pay % = ABS([Male Minimum Pay %] - [Female Minimum Pay %])
+- Below Minimum Pay % = ABS([Male Minimum Pay %] - [Female Minimum Pay %])
 
 ... Measure to create 
-Employee Meets/Exceeds Minimum Pay Count = 
+- Employee Meets/Exceeds Minimum Pay Count = 
 CALCULATE(COUNTROWS('Cleaned Palmoria Group emp-data'), 'Cleaned Palmoria Group emp-data'[Below Minimum]= "Meets/Exceeds")
 
 ... Measure to get the Gender count gap percentage
-Gender Count Gap % = 
+- Gender Count Gap % = 
 ABS([Male Percentage] - [Female Percentage])
 
 ...Measure to get the Gender pay gap percentage
-Gender Pay Gap % = 
+- Gender Pay Gap % = 
 DIVIDE([Average Male Salary] - [Average Female Salary],[Average Male Salary],0)
 
 ... Measure to get the Bonus Amount
-Bonus Amount = 'Cleaned Palmoria Group emp-data'[ Salary ] * 'Cleaned Palmoria Group emp-data'[Bonus Percent]
+- Bonus Amount = 'Cleaned Palmoria Group emp-data'[ Salary ] * 'Cleaned Palmoria Group emp-data'[Bonus Percent]
+
+... Measure to get the Bonus percentage
+- Bonus Percent =
+  SWITCH(TRUE(),'Cleaned Palmoria Group emp-data'[Rating] = "Very Poor", LOOKUPVALUE('Bonus Rules'[Very Poor], 'Bonus Rules'[Department], 'Cleaned Palmoria Group emp-data'[Department]),'Cleaned Palmoria Group emp-data'[Rating] = "Poor", LOOKUPVALUE('Bonus Rules'[Poor], 'Bonus Rules'[Department], 'Cleaned Palmoria Group emp-data'[Department]),'Cleaned Palmoria Group emp-data'[Rating] = "Average", LOOKUPVALUE('Bonus Rules'[Average], 'Bonus Rules'[Department], 'Cleaned Palmoria Group emp-data'[Department]),'Cleaned Palmoria Group emp-data'[Rating] = "Good", LOOKUPVALUE('Bonus Rules'[Good], 'Bonus Rules'[Department], 'Cleaned Palmoria Group emp-data'[Department]),'Cleaned Palmoria Group emp-data'[Rating] = "Very Good", LOOKUPVALUE('Bonus Rules'[Very Good], 'Bonus Rules'[Department], 'Cleaned Palmoria Group emp-data'[Department]))
 
 ... Add Column
-Conditional columns were created for Salary Band, Salary Sort, 
+- Conditional columns were created for Salary Band, Salary Sort, 
 
 ### DATA MODELING
 Linking the two tables together.  This is to ensure alignment and to making the two tables see each other to enable data-column relationship.
+- In Model View, RATING FIELD as a column was used to link the two tables - as it was present in the two column tables
 
 ## 🧠 Business Insights
 - Gender Count gap of 18 (1.90%)
