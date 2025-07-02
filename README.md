@@ -13,6 +13,20 @@ By analysing the various parameters in the data received, we seek to identify ke
 
 This will enable the management team to making spontaneous decisions that would bring about gender equality across its region and beyond for future expansion.
 
+## TABLE OF CONTENTS
+- Palmoria Documentation
+- Project Topic
+- Project Overview
+- Table of Contents
+- Data Sources
+- Tools Usage
+- Exploratory Data Analysis
+- Data Analysis
+- Business Findings
+- Recommendations
+- Limitations
+- References
+
 ## DATA SOURCES
 Primary source of data used here is 'Palmoria Group emp_data.csv' and 'Palmoria Group Bonus Rules.xls'
 [Download Here] ()
@@ -82,7 +96,10 @@ Linking the two tables together.  This is to ensure alignment and to making the 
 ## 🧠 Business Insights
 - Gender Count gap of 18 (1.90%)
    - Kaduna shows the highest gender gap of 17 amongst the regions
+   - Legal has the highest gender gap of 18 amongst the departments
+- Gender Rating shows that Female were better rated compared to Male
 - Gender pay gap of $2.2K (2.94%)
+  - Kaduna has the highest pay gap of $1.6M amongst the regions
 - 654 employees below salary regulation ($90K) - (0.31%)
   - Male - 326
   - Female - 328
@@ -105,4 +122,20 @@ Linking the two tables together.  This is to ensure alignment and to making the 
 ### [Dashboard Preview - Bonus Distribution]
 [Palmoria-HR-Dashboard_Bonus_Distribution](https://github.com/user-attachments/assets/1a5de18a-f8b9-4d44-8fbb-006f348f29d4)
 
+## RECOMMENDATION
 
+Based on the analysis, here are my basic recommendations for subsequent business intelligence analysis.
+
+- All efforts are to be focused on Kaduna-region and Legal department with a view of ameliorating the gender gap.
+  If addressed, it will change the narrative by the media and reposition Palmoria Group as a gender balanced manufacturing company.
+  
+- The need to restructure the Company's salary structure to meet with the statutory salary base of $90,000 minimum per employee.
+
+## LIMITATIONS
+
+- The nature of the work in some departments might favour either of the gender hence the gender gap
+- The allocation of salary to individual employees might be based on a numbers of factors including qualification, experience, etc
+
+## REFERENCES
+
+- PowerBI
