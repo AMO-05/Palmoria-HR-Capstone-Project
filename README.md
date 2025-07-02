@@ -1,141 +1,126 @@
-# PALMORIA HR DOCUMENTATION
-This is one of my Data Analysis Capstone project in fulfilment of Digital Skillup Africa- DSA INCUBATOR HUB for the final certification.  
+# 📊 Palmoria HR Dashboard – Capstone Project
 
-It is to demonstrate my technical indepth in using POWERBI to analyse real world situation and give explicit insights that would enhance decision making.
+This project is part of my final certification for the **Digital SkillUp Africa (DSA) Incubator Program**, designed to demonstrate my practical expertise in using **Power BI** to analyze HR data and provide actionable business insights.
 
-## PROJECT TOPIC: PALMORIA GROUP HR ANALYSIS
+---
 
-## PROJECT OVERVIEW
+## 📑 Table of Contents
+- [Project Overview](#project-overview)
+- [Data Sources](#data-sources)
+- [Tools Used](#tools-used)
+- [Data Preparation & Modeling](#data-preparation--modeling)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+- [Data Analysis & DAX Examples](#data-analysis--dax-examples)
+- [Business Insights](#business-insights)
+- [Dashboard Previews](#dashboard-previews)
+- [Recommendations](#recommendations)
+- [Limitations](#limitations)
+- [References](#references)
 
-This Data Analysis project aims to generate insights that the Palmoria Group management team would be able to address the issues bordering on gender inequalities in its 3 regions.
+---
 
-By analysing the various parameters in the data received, we seek to identify key areas within the business in relation to workforce structure, gender balance, salary distribution, and bonus allocation across Palmoria Group.
+## 📌 Project Overview
 
-This will enable the management team to making spontaneous decisions that would bring about gender equality across its region and beyond for future expansion.
+This HR analytics project analyzes workforce data from **Palmoria Group** across three regions. The goal is to uncover gender disparities, salary compliance issues, and bonus distribution fairness, enabling data-driven decisions for better HR policy alignment.
 
-## TABLE OF CONTENTS
-- Palmoria Documentation
-- Project Topic
-- Project Overview
-- Table of Contents
-- Data Sources
-- Tools Usage
-- Exploratory Data Analysis
-- Data Analysis
-- Business Findings
-- Recommendations
-- Limitations
-- References
+---
 
-## DATA SOURCES
-Primary source of data used here is 'Palmoria Group emp_data.csv' and 'Palmoria Group Bonus Rules.xls'
-[Download Here] ()
+## 📂 Data Sources
 
-## ⚙️ TOOLS USAGE
-- Power BI Desktop [Download Here](https://apps.microsoft.com/detail/9ntxr16hnw1t?launch=true&mode=full&hl=en-us&gl=ng&ocid=bingwebsearch)
-   - Data Cleaning and Preparation
-    In the initial phase of the cleaning and prepations, we perform the following actions:
-           1. Data loading and inspection
-           2. Handling missing variables:
-              i. Assigning a generic gender status to those employees whose gender were not specified.
-              ii. Some employees records without salaries were deleted because they are no longer with the company
-              iii. Some records indicating department as “NULL” were also deleted
-           3. Data cleaning and formatting
-  - Data Manipulation
-  - Data Munching
-- DAX
+- `Palmoria Group emp_data.csv` – Employee details  
+- `Palmoria Group Bonus Rules.xlsx` – Bonus allocation logic
+
+---
+
+## 🛠 Tools Used
+
+- Power BI Desktop ([Download](https://apps.microsoft.com/detail/9ntxr16hnw1t))
 - Power Query
-    - Conditional columns were created to aid in generating absolute outcome during analysis.
-      
-## EXPLORATORY DATA ANALYSIS
+- DAX (Data Analysis Expressions)
 
-EDA involved the exploring of the data to answer some questions about the data such as:
+---
 
-- Gender distribution and pay gap by department and region
-- Salary structure vs. $90K minimum compliance
-- Rating analysis by gender and region
-- Bonus distribution with individual insights
+## 🧹 Data Preparation & Modeling
 
-## DATA ANALYSIS
+Key actions taken:
+- Cleaned null/missing values
+- Removed obsolete employee records
+- Created conditional columns: `Salary Band`, `Salary Sort`, `Below Minimum`
+- Built relationships between datasets using the `Rating` field in the model view
 
-This is where I include some basic lines of codes and even some of the DAX expression used during the analysis.
+---
 
-... Measure to count the numbers of employee below minimum pay
-- Employee Below Minimum Pay Count = 
-CALCULATE(COUNTROWS('Cleaned Palmoria Group emp-data'), 'Cleaned Palmoria Group emp-data'[Below Minimum]= "Below")
+## 📊 Exploratory Data Analysis (EDA)
 
-... Measure to get below Minimum pay percentage
-- Below Minimum Pay % = ABS([Male Minimum Pay %] - [Female Minimum Pay %])
+Questions answered:
+- What is the gender distribution by region and department?
+- Is there a gender pay gap?
+- Which employees are below the $90K minimum salary threshold?
+- How are performance ratings and bonuses distributed?
 
-... Measure to create 
-- Employee Meets/Exceeds Minimum Pay Count = 
-CALCULATE(COUNTROWS('Cleaned Palmoria Group emp-data'), 'Cleaned Palmoria Group emp-data'[Below Minimum]= "Meets/Exceeds")
+---
 
-... Measure to get the Gender count gap percentage
-- Gender Count Gap % = 
-ABS([Male Percentage] - [Female Percentage])
+## 🧮 Data Analysis & DAX Examples
 
-...Measure to get the Gender pay gap percentage
-- Gender Pay Gap % = 
-DIVIDE([Average Male Salary] - [Average Female Salary],[Average Male Salary],0)
+```DAX
+-- Employees below $90K
+Employee Below Minimum Pay Count = 
+CALCULATE(COUNTROWS('Cleaned Palmoria Group emp-data'), 
+'Cleaned Palmoria Group emp-data'[Below Minimum]= "Below")
 
-... Measure to get the Bonus Amount
-- Bonus Amount = 'Cleaned Palmoria Group emp-data'[ Salary ] * 'Cleaned Palmoria Group emp-data'[Bonus Percent]
+-- Gender Pay Gap %
+Gender Pay Gap % = 
+DIVIDE([Average Male Salary] - [Average Female Salary], [Average Male Salary], 0)
 
-... Measure to get the Bonus percentage
-- Bonus Percent =
-  SWITCH(TRUE(),'Cleaned Palmoria Group emp-data'[Rating] = "Very Poor", LOOKUPVALUE('Bonus Rules'[Very Poor], 'Bonus Rules'[Department], 'Cleaned Palmoria Group emp-data'[Department]),'Cleaned Palmoria Group emp-data'[Rating] = "Poor", LOOKUPVALUE('Bonus Rules'[Poor], 'Bonus Rules'[Department], 'Cleaned Palmoria Group emp-data'[Department]),'Cleaned Palmoria Group emp-data'[Rating] = "Average", LOOKUPVALUE('Bonus Rules'[Average], 'Bonus Rules'[Department], 'Cleaned Palmoria Group emp-data'[Department]),'Cleaned Palmoria Group emp-data'[Rating] = "Good", LOOKUPVALUE('Bonus Rules'[Good], 'Bonus Rules'[Department], 'Cleaned Palmoria Group emp-data'[Department]),'Cleaned Palmoria Group emp-data'[Rating] = "Very Good", LOOKUPVALUE('Bonus Rules'[Very Good], 'Bonus Rules'[Department], 'Cleaned Palmoria Group emp-data'[Department]))
+- Bonus % was determined using LOOKUPVALUE with conditional logic on rating and department.
 
-... Add Column
-- Conditional columns were created for Salary Band, Salary Sort, 
+🧠 Business Insights
+Gender count gap: 18 employees (1.9%)
 
-### DATA MODELING
-Linking the two tables together.  This is to ensure alignment and to making the two tables see each other to enable data-column relationship.
-- In Model View, RATING FIELD as a column was used to link the two tables - as it was present in the two column tables
+Gender pay gap: $2.2K (2.94%)
 
-## 🧠 Business Insights
-- Gender Count gap of 18 (1.90%)
-   - Kaduna shows the highest gender gap of 17 amongst the regions
-   - Legal has the highest gender gap of 18 amongst the departments
-- Gender Rating shows that Female were better rated compared to Male
-- Gender pay gap of $2.2K (2.94%)
-  - Kaduna has the highest pay gap of $1.6M amongst the regions
-- 654 employees below salary regulation ($90K) - (0.31%)
-  - Male - 326
-  - Female - 328
-- Bonus pay distribution is nearly equal (50.95% male / 49.05% female)
+Salary regulation non-compliance: 654 employees below $90K
 
-## ANALYSIS
+Bonus distribution: Nearly equal (Male: 50.95%, Female: 49.05%)
 
-### [Dashboard Preview - Gender Distribution]
+Regions with highest gaps: Kaduna (gender & pay)
+
+Department with highest gender gap: Legal
+
+📷 Dashboard Previews
+(Add your own chart screenshots or use the Power BI report embed link here)
+
+### [Gender Distribution]
 [Palmoria-HR-Dashboard_Gender_Distribution](https://github.com/user-attachments/assets/fa195441-27d5-4fa3-af60-cab4a942ce34)
 
-### [Dashboard Preview - Rating]
+### [Performance Rating Analysis]
 [Palmoria-HR-Dashboard_Rating](https://github.com/user-attachments/assets/564287b4-e956-4906-8130-b8e52cf912ae)
 
-### [Dashboard Preview - Salary Structure]
+### [Salary Band Distribution]
 [Palmoria-HR-Dashboard_Salary_Structure](https://github.com/user-attachments/assets/3f54febd-c2dc-4979-9f7d-bcce5b3df135)
 
-### [Dashboard Preview - Salary Compliance]
+### [Compliance with $90K Regulation]
 [Palmoria-HR-Dashboard_Salary_compliance](https://github.com/user-attachments/assets/a4f6c453-edb3-4e57-b038-c17df74149c5)
 
-### [Dashboard Preview - Bonus Distribution]
+### [Bonus Allocation Breakdown]
 [Palmoria-HR-Dashboard_Bonus_Distribution](https://github.com/user-attachments/assets/1a5de18a-f8b9-4d44-8fbb-006f348f29d4)
 
-## RECOMMENDATION
+✅ Recommendations
+Focus on Kaduna and Legal department to address gender gaps.
 
-Based on the analysis, here are my basic recommendations for subsequent business intelligence analysis.
+Adjust salary structures to align with the $90K minimum compliance benchmark.
 
-- All efforts are to be focused on Kaduna-region and Legal department with a view of ameliorating the gender gap.
-  If addressed, it will change the narrative by the media and reposition Palmoria Group as a gender balanced manufacturing company.
-  
-- The need to restructure the Company's salary structure to meet with the statutory salary base of $90,000 minimum per employee.
+Continue tracking performance-based bonus fairness across departments.
 
-## LIMITATIONS
+⚠️ Limitations
+Salary differences may be influenced by experience, qualifications, or job level.
 
-- The nature of the work in some departments might favour either of the gender hence the gender gap
-- The allocation of salary to individual employees might be based on a numbers of factors including qualification, experience, etc
+Some gender gaps may reflect role-specific labor market availability.
 
-## REFERENCES
+📚 References
+Power BI Official Docs
 
-- PowerBI
+Digital SkillUp Africa – Incubator Program
+
+**Created by Adeleke Olusegun | Data Analytics Capstone Project | 2025**
+
