@@ -70,65 +70,75 @@ Questions answered:
 
 ---
 
-## 🧮 Data Analysis & DAX Examples
 
-```DAX
--- Employees below $90K
-Employee Below Minimum Pay Count = 
-CALCULATE(COUNTROWS('Cleaned Palmoria Group emp-data'), 
-'Cleaned Palmoria Group emp-data'[Below Minimum]= "Below")
+## 🧮 Data Analysis & DAX Expressions
 
--- Gender Pay Gap %
-Gender Pay Gap % = 
-DIVIDE([Average Male Salary] - [Average Female Salary], [Average Male Salary], 0)
-Bonus % was determined using LOOKUPVALUE with conditional logic on rating and department.
+**Key measures used in the analysis:**
 
-🧠 Business Insights
-- Gender count gap: 18 employees (1.9%)
+- **Employee Below Minimum Pay Count**: Counts employees earning less than $90K  
+- **Below Minimum Pay %**: Measures gender gap below regulation  
+- **Meets/Exceeds Minimum Pay Count**: Counts those who meet the $90K salary mark  
+- **Gender Count Gap %**: `ABS(Male % - Female %)`  
+- **Gender Pay Gap %**: `(Average Male Salary – Average Female Salary) / Average Male Salary`  
+- **Bonus Amount**: Calculated as `Salary * Bonus %` based on Rating  
+- **Bonus %**: Pulled from department-specific rules using `SWITCH(TRUE(), LOOKUPVALUE(...))`
 
-- Gender pay gap: $2.2K (2.94%)
+---
 
-- Salary regulation non-compliance: 654 employees below $90K
+## 🧠 Business Insights
 
-- Bonus distribution: Nearly equal (Male: 50.95%, Female: 49.05%)
+- Gender count gap: **18 employees (1.9%)**
+- Gender pay gap: **$2.2K (2.94%)**
+- Salary regulation non-compliance: **654 employees below $90K**
+- Bonus distribution: Male – 50.95%, Female – 49.05%
+- Region with highest gaps: **Kaduna**
+- Department with highest gender gap: **Legal**
 
-- Regions with highest gaps: Kaduna (gender & pay)
+---
 
-- Department with highest gender gap: Legal
+## 📷 Dashboard Previews
 
-📷 Dashboard Previews
+_You can add screenshots or embed interactive reports here:_
+### [Gender Distribution]
+[Palmoria-HR-Dashboard_Gender_Distribution](https://github.com/user-attachments/assets/fa195441-27d5-4fa3-af60-cab4a942ce34)
 
-[Gender Distribution]
-[Palmoria-HR-Dashboard_Gender_Distribution](https://github.com/user-attachments/assets/15ce0a29-b659-4157-ac68-bd106b57abef)
+### [Rating by Gender]
+[Palmoria-HR-Dashboard_Rating](https://github.com/user-attachments/assets/564287b4-e956-4906-8130-b8e52cf912ae)
 
-[Performance Rating Analysis]
-[Palmoria-HR-Dashboard_Rating](https://github.com/user-attachments/assets/ad4f2957-f6a9-4e51-9211-ce35b26f151d)
+### [Salary Structure & Banding]
+[Palmoria-HR-Dashboard_Salary_Structure](https://github.com/user-attachments/assets/3f54febd-c2dc-4979-9f7d-bcce5b3df135)
 
-[Salary Band Distribution]
-[Palmoria-HR-Dashboard_Salary_Structure](https://github.com/user-attachments/assets/5ada841f-29ad-40a8-97cf-2780a7f12349)
+### [Minimum Salary Compliance]
+[Palmoria-HR-Dashboard_Salary_compliance](https://github.com/user-attachments/assets/a4f6c453-edb3-4e57-b038-c17df74149c5)
 
-[Compliance with $90K Regulation]
-[Palmoria-HR-Dashboard_Salary_compliance](https://github.com/user-attachments/assets/1f3ecfda-d6c6-466f-8ea1-1a4ba03fb273)
+### [Bonus Distribution Insights]
+[Palmoria-HR-Dashboard_Bonus_Distribution](https://github.com/user-attachments/assets/1a5de18a-f8b9-4d44-8fbb-006f348f29d4)
 
-[Bonus Allocation Breakdown]
-[Palmoria-HR-Dashboard_Bonus_Distribution](https://github.com/user-attachments/assets/c2df70d8-39bc-4201-8f33-c0ae9c459828)
+---
 
-✅ Recommendations
-- Focus on Kaduna and Legal department to address gender gaps.
+## ✅ Recommendations
 
-- Adjust salary structures to align with the $90K minimum compliance benchmark.
+- Address gender imbalance in **Kaduna** and **Legal department**
+- Review compensation structure to comply with the $90K minimum
+- Maintain fair and transparent bonus systems
 
-- Continue tracking performance-based bonus fairness across departments.
+---
 
-⚠️ Limitations
-- Salary differences may be influenced by experience, qualifications, or job level.
+## ⚠️ Limitations
 
-- Some gender gaps may reflect role-specific labor market availability.
+- Salary differences may be influenced by factors like experience or job level
+- Some department-specific gaps may reflect labor market availability
 
-📚 References
-- Power BI Official Docs
+---
 
-- Digital SkillUp Africa – Incubator Program
+## 📚 References
 
-**Created by Adeleke Olusegun | Data Analytics Capstone Project | 2025**
+- Power BI Official Docs  
+- Digital SkillUp Africa – DSA Incubator Program
+
+---
+
+> Created by **Adeleke Olusegun** | Data Analytics Capstone Project | 2025
+
+
 
