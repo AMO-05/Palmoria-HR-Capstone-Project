@@ -60,17 +60,6 @@ Questions answered:
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
-
-Questions answered:
-- What is the gender distribution by region and department?
-- Is there a gender pay gap?
-- Which employees are below the $90K minimum salary threshold?
-- How are performance ratings and bonuses distributed?
-
----
-
-
 ## 🧮 Data Analysis & DAX Expressions
 
 **Key measures used in the analysis:**
