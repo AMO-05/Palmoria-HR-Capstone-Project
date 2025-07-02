@@ -83,7 +83,9 @@ Linking the two tables together.  This is to ensure alignment and to making the 
 - Gender Count gap of 18 (1.90%)
    - Kaduna shows the highest gender gap of 17 amongst the regions
 - Gender pay gap of $2.2K (2.94%)
-- 654 employees below salary regulation ($90K)
+- 654 employees below salary regulation ($90K) - (0.31%)
+  - Male - 326
+  - Female - 328
 - Bonus pay distribution is nearly equal (50.95% male / 49.05% female)
 
 ## ANALYSIS
@@ -92,7 +94,7 @@ Linking the two tables together.  This is to ensure alignment and to making the 
 [Palmoria-HR-Dashboard_Gender_Distribution](https://github.com/user-attachments/assets/fa195441-27d5-4fa3-af60-cab4a942ce34)
 
 ### [Dashboard Preview - Rating]
-[Palmoria-HR-Dashboard_Rating](https://github.com/user-attachments/assets/0e04dfb9-c659-463b-be11-986d37c13897)
+[Palmoria-HR-Dashboard_Rating](https://github.com/user-attachments/assets/564287b4-e956-4906-8130-b8e52cf912ae)
 
 ### [Dashboard Preview - Salary Structure]
 [Palmoria-HR-Dashboard_Salary_Structure](https://github.com/user-attachments/assets/3f54febd-c2dc-4979-9f7d-bcce5b3df135)
