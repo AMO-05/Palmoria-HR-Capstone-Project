@@ -88,16 +88,19 @@ Linking the two tables together.  This is to ensure alignment and to making the 
 
 ## ANALYSIS
 
-### [Dashboard Preview - Gender Distribution](Palmoria-HR-Dashboard_Gender_Distribution.png)
+### [Dashboard Preview - Gender Distribution]
+[Palmoria-HR-Dashboard_Gender_Distribution](https://github.com/user-attachments/assets/fa195441-27d5-4fa3-af60-cab4a942ce34)
 
 ### [Dashboard Preview - Rating]
-![Palmoria-HR-Dashboard_Rating](https://github.com/user-attachments/assets/58947caf-f76f-47c4-a919-80cbff4d7ebc)
+[Palmoria-HR-Dashboard_Rating](https://github.com/user-attachments/assets/0e04dfb9-c659-463b-be11-986d37c13897)
 
 ### [Dashboard Preview - Salary Structure]
-![Palmoria-HR-Dashboard_Salary_Structure](https://github.com/user-attachments/assets/da8710aa-7f36-4058-8165-12939d612c9c)
+[Palmoria-HR-Dashboard_Salary_Structure](https://github.com/user-attachments/assets/3f54febd-c2dc-4979-9f7d-bcce5b3df135)
 
 ### [Dashboard Preview - Salary Compliance]
-![Palmoria-HR-Dashboard_Salary_compliance](https://github.com/user-attachments/assets/f049247f-600f-4805-83f9-308bf94ddfc3)
+[Palmoria-HR-Dashboard_Salary_compliance](https://github.com/user-attachments/assets/a4f6c453-edb3-4e57-b038-c17df74149c5)
 
 ### [Dashboard Preview - Bonus Distribution]
-![Palmoria-HR-Dashboard_Bonus_Distribution](https://github.com/user-attachments/assets/65e626e3-4274-4c64-aa7d-b87f801499c8)
+[Palmoria-HR-Dashboard_Bonus_Distribution](https://github.com/user-attachments/assets/1a5de18a-f8b9-4d44-8fbb-006f348f29d4)
+
+
