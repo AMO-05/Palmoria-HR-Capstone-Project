@@ -98,7 +98,6 @@ Questions answered:
 
 ## 📷 Dashboard Previews
 
-_You can add screenshots or embed interactive reports here:_
 ### [Gender Distribution]
 [Palmoria-HR-Dashboard_Gender_Distribution](https://github.com/user-attachments/assets/fa195441-27d5-4fa3-af60-cab4a942ce34)
 
