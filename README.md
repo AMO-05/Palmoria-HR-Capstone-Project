@@ -60,6 +60,16 @@ Questions answered:
 
 ---
 
+## 📊 Exploratory Data Analysis (EDA)
+
+Questions answered:
+- What is the gender distribution by region and department?
+- Is there a gender pay gap?
+- Which employees are below the $90K minimum salary threshold?
+- How are performance ratings and bonuses distributed?
+
+---
+
 ## 🧮 Data Analysis & DAX Examples
 
 ```DAX
@@ -71,56 +81,54 @@ CALCULATE(COUNTROWS('Cleaned Palmoria Group emp-data'),
 -- Gender Pay Gap %
 Gender Pay Gap % = 
 DIVIDE([Average Male Salary] - [Average Female Salary], [Average Male Salary], 0)
-
-- Bonus % was determined using LOOKUPVALUE with conditional logic on rating and department.
+Bonus % was determined using LOOKUPVALUE with conditional logic on rating and department.
 
 🧠 Business Insights
-Gender count gap: 18 employees (1.9%)
+- Gender count gap: 18 employees (1.9%)
 
-Gender pay gap: $2.2K (2.94%)
+- Gender pay gap: $2.2K (2.94%)
 
-Salary regulation non-compliance: 654 employees below $90K
+- Salary regulation non-compliance: 654 employees below $90K
 
-Bonus distribution: Nearly equal (Male: 50.95%, Female: 49.05%)
+- Bonus distribution: Nearly equal (Male: 50.95%, Female: 49.05%)
 
-Regions with highest gaps: Kaduna (gender & pay)
+- Regions with highest gaps: Kaduna (gender & pay)
 
-Department with highest gender gap: Legal
+- Department with highest gender gap: Legal
 
 📷 Dashboard Previews
-(Add your own chart screenshots or use the Power BI report embed link here)
 
-### [Gender Distribution]
-[Palmoria-HR-Dashboard_Gender_Distribution](https://github.com/user-attachments/assets/fa195441-27d5-4fa3-af60-cab4a942ce34)
+[Gender Distribution]
+[Palmoria-HR-Dashboard_Gender_Distribution](https://github.com/user-attachments/assets/15ce0a29-b659-4157-ac68-bd106b57abef)
 
-### [Performance Rating Analysis]
-[Palmoria-HR-Dashboard_Rating](https://github.com/user-attachments/assets/564287b4-e956-4906-8130-b8e52cf912ae)
+[Performance Rating Analysis]
+[Palmoria-HR-Dashboard_Rating](https://github.com/user-attachments/assets/ad4f2957-f6a9-4e51-9211-ce35b26f151d)
 
-### [Salary Band Distribution]
-[Palmoria-HR-Dashboard_Salary_Structure](https://github.com/user-attachments/assets/3f54febd-c2dc-4979-9f7d-bcce5b3df135)
+[Salary Band Distribution]
+[Palmoria-HR-Dashboard_Salary_Structure](https://github.com/user-attachments/assets/5ada841f-29ad-40a8-97cf-2780a7f12349)
 
-### [Compliance with $90K Regulation]
-[Palmoria-HR-Dashboard_Salary_compliance](https://github.com/user-attachments/assets/a4f6c453-edb3-4e57-b038-c17df74149c5)
+[Compliance with $90K Regulation]
+[Palmoria-HR-Dashboard_Salary_compliance](https://github.com/user-attachments/assets/1f3ecfda-d6c6-466f-8ea1-1a4ba03fb273)
 
-### [Bonus Allocation Breakdown]
-[Palmoria-HR-Dashboard_Bonus_Distribution](https://github.com/user-attachments/assets/1a5de18a-f8b9-4d44-8fbb-006f348f29d4)
+[Bonus Allocation Breakdown]
+[Palmoria-HR-Dashboard_Bonus_Distribution](https://github.com/user-attachments/assets/c2df70d8-39bc-4201-8f33-c0ae9c459828)
 
 ✅ Recommendations
-Focus on Kaduna and Legal department to address gender gaps.
+- Focus on Kaduna and Legal department to address gender gaps.
 
-Adjust salary structures to align with the $90K minimum compliance benchmark.
+- Adjust salary structures to align with the $90K minimum compliance benchmark.
 
-Continue tracking performance-based bonus fairness across departments.
+- Continue tracking performance-based bonus fairness across departments.
 
 ⚠️ Limitations
-Salary differences may be influenced by experience, qualifications, or job level.
+- Salary differences may be influenced by experience, qualifications, or job level.
 
-Some gender gaps may reflect role-specific labor market availability.
+- Some gender gaps may reflect role-specific labor market availability.
 
 📚 References
-Power BI Official Docs
+- Power BI Official Docs
 
-Digital SkillUp Africa – Incubator Program
+- Digital SkillUp Africa – Incubator Program
 
 **Created by Adeleke Olusegun | Data Analytics Capstone Project | 2025**
 
