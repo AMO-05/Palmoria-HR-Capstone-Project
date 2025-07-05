@@ -149,7 +149,7 @@ The following 14 business questions were addressed using PivotTables and formula
 ### [Highest Discount by Category]
 [Highest_discount_by_category](https://github.com/user-attachments/assets/c4765a92-64d6-40a6-857c-31efb601fd92)
 
-### [Potential Revenue by Categor]
+### [Potential Revenue by Category]
 [Potential_Revenue_by_category](https://github.com/user-attachments/assets/c822b736-2e1c-45da-b523-cbb2317acb08)
 
 ### [Rating by Product Count]
