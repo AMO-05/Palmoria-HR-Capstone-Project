@@ -124,39 +124,55 @@ The following 14 business questions were addressed using PivotTables and formula
   - Office Products
   - Home Improvement
 - **Top 3 Products with highest number of reviews** 
-  - Electronics
   - Computers & Accessories
   - Home & Kitchen
+  - Electronics
  
 ---
 
 ## 📷 Dashboard Previews
 ### [Amazon Product Dashboard)
+<img width="1283" height="717" alt="Amazon_Dashboard_pg1" src="https://github.com/user-attachments/assets/64def7f6-ca12-4125-97b9-93cff78ad37f" />
+<img width="1282" height="702" alt="Amazon_Dashboard_pg2" src="https://github.com/user-attachments/assets/f8661a42-7980-4f70-a2c0-ad401d062b10" />
+
 [Amazon_Capstone_Project_Dashboard](https://github.com/user-attachments/assets/231ee634-cfd7-46a8-8fab-7b07a77b1737)
 
 ### [Average Discount percentage by Category]
-[Avg_Discount_percentage_by_Category](https://github.com/user-attachments/assets/9487a911-ec22-41af-8640-67525e751aef)
+<img width="425" height="318" alt="Average_discount%_per_category" src="https://github.com/user-attachments/assets/d3025360-79ee-4bf8-aa92-f4fff1904d1c" />
 
 ### [Product Count per Category]
-[Product_count_by_category](https://github.com/user-attachments/assets/025a3c42-7ed8-4c15-9af7-268e909d766b)
+<img width="413" height="311" alt="Product_count_by_category" src="https://github.com/user-attachments/assets/8f68e197-a65f-4ccd-98d1-8d026a465101" />
 
 ### [Total Review by Category]
-[Total_review_per_category](https://github.com/user-attachments/assets/8aea7c1f-18fc-4c1a-8058-ad01f8497187)
+<img width="427" height="316" alt="Total_review_per_category" src="https://github.com/user-attachments/assets/49c9fff8-146e-408f-8cd0-9ae7b0e6f8f8" />
 
 ### [Price range Bucket]
-[Product_count_by_Price_bucket](https://github.com/user-attachments/assets/4dc2ba87-99be-4ffa-9d7f-3dc158f5a5d6)
+<img width="425" height="310" alt="Product_count_by_Price_bucket" src="https://github.com/user-attachments/assets/ef12e54b-424f-493f-a814-8dde419d87a6" />
 
 ### [Highest Discount by Category]
-[Highest_discount_by_category](https://github.com/user-attachments/assets/c4765a92-64d6-40a6-857c-31efb601fd92)
+<img width="430" height="318" alt="Highest_discount_by_category" src="https://github.com/user-attachments/assets/86b9be57-d8b4-407f-b002-ceba172ec82a" />
 
 ### [Potential Revenue by Category]
-[Potential_Revenue_by_category](https://github.com/user-attachments/assets/c822b736-2e1c-45da-b523-cbb2317acb08)
+<img width="415" height="283" alt="Potential_Revenue_by_category" src="https://github.com/user-attachments/assets/96e807a0-25b7-468c-b91f-0ae2a19c7dc1" />
 
 ### [Rating by Product Count]
-[Rating_by_product_count](https://github.com/user-attachments/assets/95d759ef-f34c-4afe-a5e0-4273972f2bf1)
+<img width="420" height="283" alt="Rating by Product_Count" src="https://github.com/user-attachments/assets/04c5c32b-4681-4dfd-bfb6-0df968337911" />
+
+### [Rating relating to level of Discount]
+<img width="431" height="309" alt="Rating_relating_to_the_level_of_Discount" src="https://github.com/user-attachments/assets/948af6c2-3f36-42d0-ac78-553fd1e7dab1" />
 
 ### [Average Actual Price vs Average Discounted Price]
-[Avg_actual_price_vsAvg_discounted_price_Category](https://github.com/user-attachments/assets/6eb0097c-b5c3-453b-aad3-b633a5f932ba)
+<img width="427" height="311" alt="Average_actualprice_Average_Discountedprice" src="https://github.com/user-attachments/assets/05ce4952-f4f8-47a1-84b9-fd4d8c123162" />
+
+### [Highest Average Rating by Products]
+<img width="436" height="308" alt="Highest_average_product_rating" src="https://github.com/user-attachments/assets/02c2ca2d-7f86-4963-8dba-2729191349ab" />
+
+### [Products with highest number of Reviews]
+<img width="419" height="310" alt="Product_with_highest _number_of_review" src="https://github.com/user-attachments/assets/232ddcf0-698c-4d26-a8e4-b5cb9302e942" />
+
+### [Top 5 Products by Rating & Reviews Combined]
+<img width="437" height="285" alt="Top5_Product_by_Rating_Review_Combined" src="https://github.com/user-attachments/assets/0941c356-2317-47fd-882e-16f064aa3018" />
+
 
 ---
 
