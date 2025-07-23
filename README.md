@@ -87,8 +87,7 @@ Questions answered:
 
 ## 📷 Dashboard Previews
 
-- ### ![gender image](https://github.com/user-attachments/assets/0fcdd3f8-7efa-448b-92e4-9156ecca912d)
-**Gender Distribution**
+- [**Gender Distribution**]
 
 <img width="1183" height="661" alt="HR-Dashboard_Gender_Distribution" src="https://github.com/user-attachments/assets/1f52d9a8-0609-4c99-b645-1b630e6629b0" />
 
