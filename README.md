@@ -87,27 +87,27 @@ Questions answered:
 
 ## 📷 Dashboard Previews
 
-- [**Gender Distribution**]
+- ### 👥 Gender Distribution
 
 <img width="1183" height="661" alt="HR-Dashboard_Gender_Distribution" src="https://github.com/user-attachments/assets/1f52d9a8-0609-4c99-b645-1b630e6629b0" />
 
 
-- ### **Rating by Gender**
+- ### ⭐ Rating Breakdown
   
 <img width="1169" height="658" alt="Palmoria-HR-Dashboard_Rating" src="https://github.com/user-attachments/assets/6b0fb351-26c5-4b0d-9b67-ff230f2a749e" />
 
 
-- ### **Salary Structure & Banding**
+-  ### 💰 Salary Structure 
   
 <img width="1122" height="669" alt="Palmoria-HR-Dashboard_Salary_Structure" src="https://github.com/user-attachments/assets/cd4c92fe-cfc9-460d-9955-ce70f2533af2" />
 
 
-- ### **Minimum Salary Compliance**
+- ### ✅ Minimum Salary Compliance
   
 <img width="1126" height="665" alt="Palmoria-HR-Dashboard_Salary_compliance" src="https://github.com/user-attachments/assets/a4859626-c4fe-48f3-b8fe-8aa26ab89681" />
 
 
-- ### **Bonus Allocation Insights**
+- ### 🎁 Bonus Distribution
   
 <img width="1130" height="668" alt="Palmoria-HR-Dashboard_Bonus_Distribution" src="https://github.com/user-attachments/assets/694ea5e7-6973-4b17-96fb-fd59b0663499" />
 
